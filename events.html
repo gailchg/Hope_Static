@@ -1,0 +1,641 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hope in a Box</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+            <img src="assets/logo.png" alt="Logo Icon">
+            HOPE IN A BOX
+        </a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="events.html">EVENTS</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="tabs-nav" style="margin-top: 130px;">
+    <button class="tab-btn active" onclick="openTab('volunteer')">VOLUNTEER EVENTS</button>
+    <button class="tab-btn" onclick="openTab('donation')">DONATION PROGRAMS</button>
+</div>
+
+<div style=" color: red; padding: 40px; margin-bottom: 0px; text-align: center;">
+    <strong>⚠️ Static Demo Mode</strong><br>
+    Since this is hosted on GitHub Pages, dynamic features like "View Details" and specific event data are disabled. 
+    <br>Please view the live version for full functionality.
+</div>
+
+<div class="container" style="padding: 40px 0 80px 0;">
+
+    <div id="volunteer" class="tab-content active">
+        <div class="events-page-grid">
+                            <div class="program-card">
+                
+                    <div class="card-img-wrapper" style="position:relative;">
+                        <img src="assets/tree_planting.jpg" class="card-img-top" alt="Event" onerror="this.src='assets/pag-asa_fund.jpg'">
+                        
+                                                    <span class="badge-overlay badge-closed">COMPLETED</span>
+                                            </div>
+
+                    <div class="card-body">
+                        <h4 class="card-title">Barangay Tree Planting Activity</h4>
+                    
+                        <div class="card-info"><i class="fas fa-map-marker-alt"></i> Brgy. Malinis Community Park</div>
+                        <div class="card-info"><i class="far fa-calendar-alt"></i> 2025-09-14</div>
+                                                    <div class="card-info"><i class="far fa-clock"></i> 7:00 AM</div>
+                                            
+                        <div class="status-bar">
+                            <div class="status-fill" style="width: 0%; 
+                                background-color: #6c757d;">
+                            </div>
+                        </div>
+                        
+                        <div class="status-text">
+                                                            Successfully Completed
+                                                    </div>
+
+                                                    <a href="#" 
+                                class="btn btn-white" 
+                                style="margin-top: 10px; text-align:center; font-size:0.8rem; border:1px solid #ccc; display:inline-block; text-decoration:none;">
+                                VIEW REPORT
+                            </a>
+                        
+                    </div>
+                </div>
+                            <div class="program-card">
+                
+                    <div class="card-img-wrapper" style="position:relative;">
+                        <img src="assets/donation_drive.jpg" class="card-img-top" alt="Event" onerror="this.src='assets/pag-asa_fund.jpg'">
+                        
+                                                    <span class="badge-overlay badge-closed">COMPLETED</span>
+                                            </div>
+
+                    <div class="card-body">
+                        <h4 class="card-title">School Supplies Donation Drive</h4>
+                    
+                        <div class="card-info"><i class="fas fa-map-marker-alt"></i> Pagsulong Elementary School</div>
+                        <div class="card-info"><i class="far fa-calendar-alt"></i> 2025-10-15</div>
+                                                    <div class="card-info"><i class="far fa-clock"></i> 12:00 PM</div>
+                                            
+                        <div class="status-bar">
+                            <div class="status-fill" style="width: 0%; 
+                                background-color: #6c757d;">
+                            </div>
+                        </div>
+                        
+                        <div class="status-text">
+                                                            Successfully Completed
+                                                    </div>
+
+                                                    <a href="#" 
+                                class="btn btn-white" 
+                                style="margin-top: 10px; text-align:center; font-size:0.8rem; border:1px solid #ccc; display:inline-block; text-decoration:none;">
+                                VIEW REPORT
+                            </a>
+                        
+                    </div>
+                </div>
+                            <div class="program-card">
+                
+                    <div class="card-img-wrapper" style="position:relative;">
+                        <img src="assets/coastal_cleanup.jpg" class="card-img-top" alt="Event" onerror="this.src='assets/pag-asa_fund.jpg'">
+                        
+                                                    <span class="badge-overlay badge-closed">COMPLETED</span>
+                                            </div>
+
+                    <div class="card-body">
+                        <h4 class="card-title">Coastal Cleanup</h4>
+                    
+                        <div class="card-info"><i class="fas fa-map-marker-alt"></i> Nasugbu, Batangas</div>
+                        <div class="card-info"><i class="far fa-calendar-alt"></i> 2025-11-01</div>
+                                                    <div class="card-info"><i class="far fa-clock"></i> 6:00 AM</div>
+                                            
+                        <div class="status-bar">
+                            <div class="status-fill" style="width: 0%; 
+                                background-color: #6c757d;">
+                            </div>
+                        </div>
+                        
+                        <div class="status-text">
+                                                            Successfully Completed
+                                                    </div>
+
+                                                    <a href="#" 
+                                class="btn btn-white" 
+                                style="margin-top: 10px; text-align:center; font-size:0.8rem; border:1px solid #ccc; display:inline-block; text-decoration:none;">
+                                VIEW REPORT
+                            </a>
+                        
+                    </div>
+                </div>
+                            <div class="program-card">
+                
+                    <div class="card-img-wrapper" style="position:relative;">
+                        <img src="assets/feeding_program.jpg" class="card-img-top" alt="Event" onerror="this.src='assets/pag-asa_fund.jpg'">
+                        
+                                                    <span class="badge-overlay badge-open">RECRUITING</span>
+                                            </div>
+
+                    <div class="card-body">
+                        <h4 class="card-title">Community Feeding Program</h4>
+                    
+                        <div class="card-info"><i class="fas fa-map-marker-alt"></i> Barangay Covered Court, Looc, Romblon</div>
+                        <div class="card-info"><i class="far fa-calendar-alt"></i> 2025-12-27</div>
+                                                    <div class="card-info"><i class="far fa-clock"></i> 1:00 PM</div>
+                                            
+                        <div class="status-bar">
+                            <div class="status-fill" style="width: 2%; 
+                                background-color: #00AEEF;">
+                            </div>
+                        </div>
+                        
+                        <div class="status-text">
+                                                            49 slots open
+                                                    </div>
+
+                                                    <a href="#" 
+                                class="btn btn-yellow" 
+                                style="margin-top: 10px; text-align:center; font-size:0.8rem;">
+                                VIEW DETAILS
+                            </a>
+                        
+                    </div>
+                </div>
+                            <div class="program-card">
+                
+                    <div class="card-img-wrapper" style="position:relative;">
+                        <img src="assets/blood_donation.jpg" class="card-img-top" alt="Event" onerror="this.src='assets/pag-asa_fund.jpg'">
+                        
+                                                    <span class="badge-overlay badge-open">RECRUITING</span>
+                                            </div>
+
+                    <div class="card-body">
+                        <h4 class="card-title">Blood Donation Campaign</h4>
+                    
+                        <div class="card-info"><i class="fas fa-map-marker-alt"></i> City Health Office, Calapan City, Oriental Mindoro</div>
+                        <div class="card-info"><i class="far fa-calendar-alt"></i> 2026-01-05</div>
+                                                    <div class="card-info"><i class="far fa-clock"></i> 7:00 AM</div>
+                                            
+                        <div class="status-bar">
+                            <div class="status-fill" style="width: 0%; 
+                                background-color: #00AEEF;">
+                            </div>
+                        </div>
+                        
+                        <div class="status-text">
+                                                            20 slots open
+                                                    </div>
+
+                                                    <a href="#" 
+                                class="btn btn-yellow" 
+                                style="margin-top: 10px; text-align:center; font-size:0.8rem;">
+                                VIEW DETAILS
+                            </a>
+                        
+                    </div>
+                </div>
+                            <div class="program-card">
+                
+                    <div class="card-img-wrapper" style="position:relative;">
+                        <img src="assets/leadership_workshop.jpg" class="card-img-top" alt="Event" onerror="this.src='assets/pag-asa_fund.jpg'">
+                        
+                                                    <span class="badge-overlay badge-open">RECRUITING</span>
+                                            </div>
+
+                    <div class="card-body">
+                        <h4 class="card-title">Youth Leadership Workshop</h4>
+                    
+                        <div class="card-info"><i class="fas fa-map-marker-alt"></i> Municipal Training Hall, Odiongan, Romblon</div>
+                        <div class="card-info"><i class="far fa-calendar-alt"></i> 2026-01-08</div>
+                                                    <div class="card-info"><i class="far fa-clock"></i> 9:00 AM</div>
+                                            
+                        <div class="status-bar">
+                            <div class="status-fill" style="width: 0%; 
+                                background-color: #00AEEF;">
+                            </div>
+                        </div>
+                        
+                        <div class="status-text">
+                                                            30 slots open
+                                                    </div>
+
+                                                    <a href="#" 
+                                class="btn btn-yellow" 
+                                style="margin-top: 10px; text-align:center; font-size:0.8rem;">
+                                VIEW DETAILS
+                            </a>
+                        
+                    </div>
+                </div>
+                            <div class="program-card">
+                
+                    <div class="card-img-wrapper" style="position:relative;">
+                        <img src="assets/clean_green.jpg" class="card-img-top" alt="Event" onerror="this.src='assets/pag-asa_fund.jpg'">
+                        
+                                                    <span class="badge-overlay badge-open">RECRUITING</span>
+                                            </div>
+
+                    <div class="card-body">
+                        <h4 class="card-title">Clean &amp; Green Community Project</h4>
+                    
+                        <div class="card-info"><i class="fas fa-map-marker-alt"></i> Barangay Poblacion, Santa Fe, Romblon</div>
+                        <div class="card-info"><i class="far fa-calendar-alt"></i> 2026-01-14</div>
+                                                    <div class="card-info"><i class="far fa-clock"></i> 6:00 AM</div>
+                                            
+                        <div class="status-bar">
+                            <div class="status-fill" style="width: 0%; 
+                                background-color: #00AEEF;">
+                            </div>
+                        </div>
+                        
+                        <div class="status-text">
+                                                            30 slots open
+                                                    </div>
+
+                                                    <a href="#" 
+                                class="btn btn-yellow" 
+                                style="margin-top: 10px; text-align:center; font-size:0.8rem;">
+                                VIEW DETAILS
+                            </a>
+                        
+                    </div>
+                </div>
+                            <div class="program-card">
+                
+                    <div class="card-img-wrapper" style="position:relative;">
+                        <img src="assets/disaster_prepare.jpg" class="card-img-top" alt="Event" onerror="this.src='assets/pag-asa_fund.jpg'">
+                        
+                                                    <span class="badge-overlay badge-open">RECRUITING</span>
+                                            </div>
+
+                    <div class="card-body">
+                        <h4 class="card-title">Disaster Preparedness Training</h4>
+                    
+                        <div class="card-info"><i class="fas fa-map-marker-alt"></i> DRRM Operations Center, Odiongan, Romblon</div>
+                        <div class="card-info"><i class="far fa-calendar-alt"></i> 2026-02-21</div>
+                                                    <div class="card-info"><i class="far fa-clock"></i> 9:00 AM</div>
+                                            
+                        <div class="status-bar">
+                            <div class="status-fill" style="width: 1%; 
+                                background-color: #00AEEF;">
+                            </div>
+                        </div>
+                        
+                        <div class="status-text">
+                                                            99 slots open
+                                                    </div>
+
+                                                    <a href="#" 
+                                class="btn btn-yellow" 
+                                style="margin-top: 10px; text-align:center; font-size:0.8rem;">
+                                VIEW DETAILS
+                            </a>
+                        
+                    </div>
+                </div>
+                            <div class="program-card">
+                
+                    <div class="card-img-wrapper" style="position:relative;">
+                        <img src="assets/school_donation.jpg" class="card-img-top" alt="Event" onerror="this.src='assets/pag-asa_fund.jpg'">
+                        
+                                                    <span class="badge-overlay badge-open">RECRUITING</span>
+                                            </div>
+
+                    <div class="card-body">
+                        <h4 class="card-title">School Donation Program</h4>
+                    
+                        <div class="card-info"><i class="fas fa-map-marker-alt"></i> Barangay Hall Donation Center, Alcantara, Romblon</div>
+                        <div class="card-info"><i class="far fa-calendar-alt"></i> 2026-03-11</div>
+                                                    <div class="card-info"><i class="far fa-clock"></i> 1:00 PM</div>
+                                            
+                        <div class="status-bar">
+                            <div class="status-fill" style="width: 0%; 
+                                background-color: #00AEEF;">
+                            </div>
+                        </div>
+                        
+                        <div class="status-text">
+                                                            45 slots open
+                                                    </div>
+
+                                                    <a href="#" 
+                                class="btn btn-yellow" 
+                                style="margin-top: 10px; text-align:center; font-size:0.8rem;">
+                                VIEW DETAILS
+                            </a>
+                        
+                    </div>
+                </div>
+                    </div>
+    </div>
+
+    <div id="donation" class="tab-content">
+        <div class="events-page-grid">
+                            <div class="program-card">
+                    <div class="card-img-wrapper" style="position:relative;">
+                         <img src="assets/iskolar_fund.jpg" class="card-img-top" alt="Donation" onerror="this.src='assets/pag-asa_fund.jpg'">
+                    </div>
+                    
+                    <div class="card-body">
+                        <h4 class="card-title">Iskolar Fund</h4>
+                        
+                        <div class="card-info"><i class="fas fa-map-marker-alt"></i> Barangay Singcang-Airport, Bacolod City, Negros Occidental</div>
+                        
+                        <div class="status-bar">
+                            <div class="status-fill" style="width: 0%; background-color: #28a745;"></div>
+                        </div>
+                        
+                        <div class="status-text">
+                                                            PHP 300,000 still needed
+                                                    </div>
+
+                        <a href="#" 
+                            class="btn btn-yellow" 
+                            style="margin-top: 10px; text-align:center; font-size:0.8rem;">
+                            VIEW DETAILS
+                        </a>
+                    </div>
+                </div>
+                            <div class="program-card">
+                    <div class="card-img-wrapper" style="position:relative;">
+                         <img src="assets/hapag-yakap.jpg" class="card-img-top" alt="Donation" onerror="this.src='assets/pag-asa_fund.jpg'">
+                    </div>
+                    
+                    <div class="card-body">
+                        <h4 class="card-title">Hapag-Yakap: Community Feeding &amp; Nutrition Fund</h4>
+                        
+                        <div class="card-info"><i class="fas fa-map-marker-alt"></i> Barangay Guadalupe, Cebu City, Cebu</div>
+                        
+                        <div class="status-bar">
+                            <div class="status-fill" style="width: 0%; background-color: #28a745;"></div>
+                        </div>
+                        
+                        <div class="status-text">
+                                                            PHP 120,000 still needed
+                                                    </div>
+
+                        <a href="#" 
+                            class="btn btn-yellow" 
+                            style="margin-top: 10px; text-align:center; font-size:0.8rem;">
+                            VIEW DETAILS
+                        </a>
+                    </div>
+                </div>
+                            <div class="program-card">
+                    <div class="card-img-wrapper" style="position:relative;">
+                         <img src="assets/munting_pag-asa.jpg" class="card-img-top" alt="Donation" onerror="this.src='assets/pag-asa_fund.jpg'">
+                    </div>
+                    
+                    <div class="card-body">
+                        <h4 class="card-title">Munting Pag-asa Program
+</h4>
+                        
+                        <div class="card-info"><i class="fas fa-map-marker-alt"></i> Sitio Maligaya, Barangay Poblacion, Alcantara, Romblon</div>
+                        
+                        <div class="status-bar">
+                            <div class="status-fill" style="width: 0%; background-color: #28a745;"></div>
+                        </div>
+                        
+                        <div class="status-text">
+                                                            PHP 100,000 still needed
+                                                    </div>
+
+                        <a href="#" 
+                            class="btn btn-yellow" 
+                            style="margin-top: 10px; text-align:center; font-size:0.8rem;">
+                            VIEW DETAILS
+                        </a>
+                    </div>
+                </div>
+                            <div class="program-card">
+                    <div class="card-img-wrapper" style="position:relative;">
+                         <img src="assets/hapag-asa.jpg" class="card-img-top" alt="Donation" onerror="this.src='assets/pag-asa_fund.jpg'">
+                    </div>
+                    
+                    <div class="card-body">
+                        <h4 class="card-title">Hapag-asa Feeding Program</h4>
+                        
+                        <div class="card-info"><i class="fas fa-map-marker-alt"></i> Santa Maria, Romblon</div>
+                        
+                        <div class="status-bar">
+                            <div class="status-fill" style="width: 0%; background-color: #28a745;"></div>
+                        </div>
+                        
+                        <div class="status-text">
+                                                            PHP 25,000 still needed
+                                                    </div>
+
+                        <a href="#" 
+                            class="btn btn-yellow" 
+                            style="margin-top: 10px; text-align:center; font-size:0.8rem;">
+                            VIEW DETAILS
+                        </a>
+                    </div>
+                </div>
+                            <div class="program-card">
+                    <div class="card-img-wrapper" style="position:relative;">
+                         <img src="assets/edukaagapay.jpg" class="card-img-top" alt="Donation" onerror="this.src='assets/pag-asa_fund.jpg'">
+                    </div>
+                    
+                    <div class="card-body">
+                        <h4 class="card-title">EduKaagapay</h4>
+                        
+                        <div class="card-info"><i class="fas fa-map-marker-alt"></i> Barangay 183, Pasay City, Metro Manila</div>
+                        
+                        <div class="status-bar">
+                            <div class="status-fill" style="width: 0%; background-color: #28a745;"></div>
+                        </div>
+                        
+                        <div class="status-text">
+                                                            PHP 80,000 still needed
+                                                    </div>
+
+                        <a href="#" 
+                            class="btn btn-yellow" 
+                            style="margin-top: 10px; text-align:center; font-size:0.8rem;">
+                            VIEW DETAILS
+                        </a>
+                    </div>
+                </div>
+                            <div class="program-card">
+                    <div class="card-img-wrapper" style="position:relative;">
+                         <img src="assets/buklat.jpg" class="card-img-top" alt="Donation" onerror="this.src='assets/pag-asa_fund.jpg'">
+                    </div>
+                    
+                    <div class="card-body">
+                        <h4 class="card-title">BUKLAT: Learning Support Fund</h4>
+                        
+                        <div class="card-info"><i class="fas fa-map-marker-alt"></i> City Library, Baguio City, Benguet</div>
+                        
+                        <div class="status-bar">
+                            <div class="status-fill" style="width: 16.666666666667%; background-color: #28a745;"></div>
+                        </div>
+                        
+                        <div class="status-text">
+                                                            PHP 50,000 still needed
+                                                    </div>
+
+                        <a href="#" 
+                            class="btn btn-yellow" 
+                            style="margin-top: 10px; text-align:center; font-size:0.8rem;">
+                            VIEW DETAILS
+                        </a>
+                    </div>
+                </div>
+                            <div class="program-card">
+                    <div class="card-img-wrapper" style="position:relative;">
+                         <img src="assets/lingap-bayanihan.jpg" class="card-img-top" alt="Donation" onerror="this.src='assets/pag-asa_fund.jpg'">
+                    </div>
+                    
+                    <div class="card-body">
+                        <h4 class="card-title">Lingap-Bayanihan</h4>
+                        
+                        <div class="card-info"><i class="fas fa-map-marker-alt"></i> Barangay Pasonanca, Zamboanga City</div>
+                        
+                        <div class="status-bar">
+                            <div class="status-fill" style="width: 0%; background-color: #28a745;"></div>
+                        </div>
+                        
+                        <div class="status-text">
+                                                            PHP 150,000 still needed
+                                                    </div>
+
+                        <a href="#" 
+                            class="btn btn-yellow" 
+                            style="margin-top: 10px; text-align:center; font-size:0.8rem;">
+                            VIEW DETAILS
+                        </a>
+                    </div>
+                </div>
+                            <div class="program-card">
+                    <div class="card-img-wrapper" style="position:relative;">
+                         <img src="assets/infant_care.webp" class="card-img-top" alt="Donation" onerror="this.src='assets/pag-asa_fund.jpg'">
+                    </div>
+                    
+                    <div class="card-body">
+                        <h4 class="card-title">Infant Care Drive</h4>
+                        
+                        <div class="card-info"><i class="fas fa-map-marker-alt"></i> Rural Health Unit, Digos City, Davao del Sur</div>
+                        
+                        <div class="status-bar">
+                            <div class="status-fill" style="width: 0%; background-color: #28a745;"></div>
+                        </div>
+                        
+                        <div class="status-text">
+                                                            PHP 90,000 still needed
+                                                    </div>
+
+                        <a href="#" 
+                            class="btn btn-yellow" 
+                            style="margin-top: 10px; text-align:center; font-size:0.8rem;">
+                            VIEW DETAILS
+                        </a>
+                    </div>
+                </div>
+                            <div class="program-card">
+                    <div class="card-img-wrapper" style="position:relative;">
+                         <img src="assets/tulong-kalinga.jpg" class="card-img-top" alt="Donation" onerror="this.src='assets/pag-asa_fund.jpg'">
+                    </div>
+                    
+                    <div class="card-body">
+                        <h4 class="card-title">Tulong-Kalinga: Medical Assistance Fund</h4>
+                        
+                        <div class="card-info"><i class="fas fa-map-marker-alt"></i> Barangay Sto. Rosario, Angeles City, Pampanga</div>
+                        
+                        <div class="status-bar">
+                            <div class="status-fill" style="width: 0%; background-color: #28a745;"></div>
+                        </div>
+                        
+                        <div class="status-text">
+                                                            PHP 200,000 still needed
+                                                    </div>
+
+                        <a href="#" 
+                            class="btn btn-yellow" 
+                            style="margin-top: 10px; text-align:center; font-size:0.8rem;">
+                            VIEW DETAILS
+                        </a>
+                    </div>
+                </div>
+                    </div>
+    </div>
+
+</div>
+
+<script>
+function openTab(tabName) {
+    var contents = document.getElementsByClassName("tab-content");
+    for (var i = 0; i < contents.length; i++) {
+        contents[i].classList.remove("active");
+    }
+    var buttons = document.getElementsByClassName("tab-btn");
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].classList.remove("active");
+    }
+    document.getElementById(tabName).classList.add("active");
+    
+    // Logic to highlight correct button
+    if(tabName === 'volunteer') {
+        buttons[0].classList.add("active");
+    } else {
+        buttons[1].classList.add("active");
+    }
+}
+
+window.onload = function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const tab = urlParams.get('tab');
+    if (tab === 'donation') {
+        openTab('donation');
+    } else {
+        openTab('volunteer');
+    }
+};
+</script>
+<section class="bottom-cta">
+    <div class="container">
+        <img src="assets/logo.png" alt="Rainbow Icon" style="height: 50px; margin-bottom: 20px;">
+        <p class="cta-tagline">BE PART OF THE MOVEMENT — YOUR SMALL ACT MAKES A BIG DIFFERENCE!</p>
+        <a href="volunteer.html" class="btn btn-yellow btn-large">GET INVOLVED</a>
+    </div>
+</section>
+
+<footer>
+    <div class="container footer-content">
+        <div class="footer-links">
+            <a href="terms.html">Terms of Use</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+        
+        <div class="social-icons">
+            <p>Follow us</p>
+            <a href="https://www.facebook.com/HIABOrg"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        
+        <div class="copyright">
+            Copyright 2025 Hope in a Box
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

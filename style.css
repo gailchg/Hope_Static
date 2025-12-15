@@ -1,0 +1,912 @@
+
+:root {
+    --primary-yellow: #FCEEA7;
+    --button-yellow: #F7DC6F;
+    --text-dark: #333333;
+    --text-light: #666666;
+    --bg-cream: #FDFCF6;
+    --accent-green: #A8D5BA; /* For progress bars */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: var(--bg-cream);
+    color: var(--text-dark);
+    line-height: 1.6;
+    padding-top: 0; 
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: inline-block;
+}
+
+.btn-white {
+    background-color: white;
+    color: var(--text-dark);
+}
+
+.btn-yellow {
+    background-color: var(--button-yellow);
+    color: var(--text-dark);
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+header {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    z-index: 1000; 
+    
+    background-color: var(--bg-cream); 
+    padding: 20px 0;
+    
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
+}
+
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.main-nav a {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    background-image: url('../assets/hero_section.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    min-height: 850px;
+    display: flex;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+
+
+/* Dark overlay to make text readable */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top:0; left:0; right:0; bottom:0;
+    background: rgba(0,0,0,0.3);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+/* --- About Us Section --- */
+.about-us-section {
+    text-align: center;
+    padding: 80px 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-icon {
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.about-us-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* --- Main Content Grid --- */
+.main-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    padding-bottom: 80px;
+}
+
+.column-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+    font-weight: 800;
+}
+
+/* Event Cards (Left Column) */
+
+/* 1. Make both cards identical containers */
+.event-card, 
+.donation-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+    display: flex;       
+    flex-direction: column;
+}
+
+.event-card:hover, 
+.donation-card:hover {
+    transform: translateY(-5px);
+}
+
+/* 2. Make images identical and smaller */
+.event-card img, 
+.donation-card img {
+    width: 100%;
+    height: 200px;   
+    object-fit: cover;
+    display: block;
+    margin: 0;         
+    border-radius: 10px 10px 0 0; 
+}
+
+/* 3. Identical Typography & Spacing */
+.event-card h3, 
+.donation-card h3 { 
+    font-size: 1.3rem;
+    margin: 15px 20px 5px 20px; 
+    font-weight: bold;
+}
+
+.event-card .event-date, 
+.donation-card .event-date { 
+    display: block;
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0 20px 10px 20px;
+}
+
+.event-card p, 
+.donation-card p {
+    padding: 0 20px;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.event-card .read-more, 
+.donation-card .read-more {
+    display: inline-block;
+    margin: 0 20px 20px 20px;
+    color: #4A90E2;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.donation-grid {
+    display: block !important;
+}
+
+/* --- Bottom CTA Section --- */
+.bottom-cta {
+    text-align: center;
+    padding: 80px 0;
+    background-color: var(--bg-cream); 
+    position: relative;
+}
+
+.bottom-cta::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to top, rgba(252, 238, 167, 0.3), transparent);
+    z-index: -1;
+}
+
+
+.cta-tagline {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 30px 0;
+    color: var(--text-light);
+}
+
+.btn-large {
+    padding: 15px 50px;
+    font-size: 1.1rem;
+}
+
+/* --- EVENTS PAGE STYLES --- */
+
+.events-page-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.event-card-full {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.event-card-full:hover {
+    transform: translateY(-5px);
+}
+
+.event-img-wrapper {
+    height: 200px;
+    overflow: hidden;
+}
+
+.event-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.event-details {
+    padding: 20px;
+}
+
+.event-date-badge {
+    background-color: var(--primary-yellow);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.event-loc {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.event-desc {
+    font-size: 0.95rem;
+    color: var(--text-light);
+}
+
+/* --- TABS & SEARCH LAYOUT --- */
+
+/* Tab Navigation */
+.tabs-nav {
+    display: flex;
+    justify-content: center;
+    background: transparent; 
+    border-bottom: none;
+    padding-bottom: 10px; 
+}
+
+.tab-btn {
+    padding: 20px 40px;
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #666;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s;
+}
+
+.tab-btn:hover {
+    color: #00AEEF; 
+}
+
+.tab-btn.active {
+    color: #333;
+    border-bottom: 3px solid #333; /* Dark underline for active tab */
+}
+
+.search-section {
+    background-color: #00AEEF; 
+    padding: 30px 0;
+    margin-bottom: 30px;
+}
+
+.search-card {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+.filter-group {
+    flex: 1;
+    min-width: 150px;
+}
+
+.filter-group label {
+    display: block;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.filter-group select, .filter-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.search-btn {
+    background-color: #00AEEF;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.search-btn:hover {
+    background-color: #0095cd;
+}
+
+/* Content Grid Styling */
+.tab-content {
+    display: none; 
+}
+
+.tab-content.active {
+    display: block; 
+}
+
+.program-card {
+    background: #f4f4f4; 
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    line-height: 1.3;
+}
+
+.card-info {
+    font-size: 0.85rem;
+    color: #555;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.card-info i {
+    color: #555;
+    margin-top: 3px;
+    width: 15px;
+}
+
+/* Progress Bar in Card */
+.status-bar {
+    height: 6px;
+    background: #ddd;
+    border-radius: 3px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.status-fill {
+    height: 100%;
+    background-color: #00AEEF;
+}
+
+.status-text {
+    font-size: 0.8rem;
+    color: #00AEEF;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+/* Status Badges */
+.card-img-wrapper {
+    position: relative;
+}
+
+.badge-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+.badge-open {
+    background-color: #28a745; /* Green for Open */
+}
+
+.badge-closed {
+    background-color: #6c757d; /* Grey for Past */
+}
+
+/* --- Footer --- */
+footer {
+    padding: 30px 0;
+    border-top: 1px solid #eee;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+.footer-links a {
+    margin-right: 20px;
+}
+
+.social-icons {
+    text-align: center; 
+}
+
+.social-icons p {
+    margin-bottom: 10px; 
+    font-weight: bold;   
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 1.2rem;
+    display: inline-block; 
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-content h1 { font-size: 2.5rem; }
+    .main-content-grid { grid-template-columns: 1fr; }
+    .donation-grid { grid-template-columns: 1fr; }
+    .nav-container { flex-direction: column; }
+    .main-nav ul { margin-top: 20px; }
+}
+
+/* --- Volunteer Form Styles --- */
+
+.form-wrapper {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.volunteer-form .form-group {
+    margin-bottom: 20px;
+}
+
+.volunteer-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.volunteer-form input,
+.volunteer-form select,
+.volunteer-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
+.volunteer-form input:focus,
+.volunteer-form select:focus,
+.volunteer-form textarea:focus {
+    border-color: var(--button-yellow);
+    outline: none;
+    background-color: #fdfdfd;
+}
+
+/* Alert Messages */
+.alert {
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.alert.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+
+.container {
+    margin-top: 0px; 
+}
+
+.hero-section + .container, 
+.hero-section + .about-us-section {
+    margin-top: 0;
+}
+
+header .container, footer .container {
+    margin-top: 0;
+}
+
+/* --- ABOUT US SECTION (FINAL FIX) --- */
+
+/* 1. Page Container  */
+.about-page-container {
+    padding-top: 140px; 
+    padding-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Karla', sans-serif;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 2. Flex Layout */
+.about-flex {
+    display: flex;
+    flex-direction: column; 
+    gap: 50px;
+}
+
+/* 3. Left Column (Text) */
+.about-left-column {
+    width: 100%;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 35px; 
+    position: relative; 
+}
+
+/* 2. Create the Decorative Line */
+.about-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px; 
+    left: 0;
+    width: 80px; 
+    height: 5px; 
+    background-color: var(--button-yellow); 
+    border-radius: 3px; 
+}
+
+.about-description {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #5a5a5a;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* 4. Mission & Vision */
+.mission-vision-container {
+    margin-top: 40px;
+}
+
+.mission-vision-container h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.mission-card, 
+.vision-card {
+    background: transparent;
+    padding: 0;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.mission-card h3, 
+.vision-card h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mission-card i { color: #f39c12; }
+.vision-card i { color: #7f8c8d; }
+
+.mission-card p, 
+.vision-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* 5. Right Column (Images) */
+.about-right-column {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Image Grid System */
+.images-container {
+    width: 100%;
+    max-width: 500px;
+}
+
+.image-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; 
+}
+
+.box-one {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1; 
+}
+
+/* Individual Image Boxes */
+.image-box {
+    width: 100%;
+    aspect-ratio: 1; 
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #eee; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* --- DESKTOP STYLES */
+@media (min-width: 768px) {
+    .about-flex {
+        flex-direction: row; 
+        align-items: flex-start;
+        gap: 60px;
+    }
+
+    .about-left-column {
+        width: 45%;
+    }
+
+    .about-right-column {
+        width: 55%;
+        margin-top: 140px; 
+    }
+    
+    .box-one:nth-child(2) {
+        margin-top: 0; 
+    }
+}
+
+/* --- NEW SPLIT CONTACT LAYOUT --- */
+
+/* The main outer card */
+.contact-box {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    overflow: hidden; 
+    display: flex;    
+    width: 100%;      
+    max-width: 100%; 
+    margin: 0 auto;
+    min-height: 550px; 
+}
+
+/* LEFT SIDE: The Form */
+.contact-left {
+    width: 65%;
+    padding: 50px;
+}
+
+/* RIGHT SIDE: The Design/Info */
+.contact-right {
+    width: 35%;
+    background-color: var(--primary-yellow);
+    background-blend-mode: overlay; 
+    background-size: cover;
+    background-position: center;
+    color: var(--text-dark);
+    padding: 40px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+/* Dark overlay */
+.contact-right::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 1;
+}
+
+.contact-right-content {
+    position: relative;
+    z-index: 2;
+}
+
+.info-item {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.info-item i {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: #333;
+    margin-top: 5px;
+}
+
+.info-item h4 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.info-item p {
+    font-size: 0.95rem;
+    color: #444;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 900px) {
+    .contact-box {
+        flex-direction: column; 
+    }
+    .contact-left, .contact-right {
+        width: 100%;
+        padding: 30px;
+    }
+    .contact-right {
+        min-height: 250px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .contact-right-content {
+        width: 100%;
+    }
+    .info-item {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
