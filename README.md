@@ -9,7 +9,7 @@ Because **GitHub Pages** does not support server-side languages like PHP or data
 
 ## 🚧 Static Mode Limitations
 * **No Database Connection:** Dynamic features (e.g., calculating donation totals, tracking live volunteer slots) are simulated or hard-coded.
-* **Forms Disabled:** The "Contact Us" and "Donate" forms do not submit data.
+* **Forms Disabled:** The "Contact Us", "Donate", and "Volunteer" forms do not submit data.
 * **Static Buttons:** Clicking "View Details" or "Volunteer" buttons will trigger a pop-up alert explaining that the feature requires a live database connection.
 
 To view the **fully functional dynamic version** with a working database, please visit our live deployment on InfinityFree:
