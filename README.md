@@ -17,10 +17,10 @@ To view the **fully functional dynamic version** with a working database, please
 
 ## 🎨 Features Showcased
 * **Hero Section:** Responsive banner with call-to-action buttons.
-* [cite_start]**Sticky Navigation:** Header remains fixed while scrolling[cite: 105].
-* [cite_start]**Tabbed Interface:** JavaScript-powered switching between Events and Programs[cite: 85].
-* [cite_start]**Responsive Grid:** Event and Donation cards stack vertically on mobile devices[cite: 106].
-* [cite_start]**Split-Layout Contact Page:** Functional UI design for the contact section[cite: 148].
+* **Sticky Navigation:** Header remains fixed while scrolling.
+* **Tabbed Interface:** JavaScript-powered switching between Events and Programs.
+* **Responsive Grid:** Event and Donation cards stack vertically on mobile devices.
+* **Split-Layout Contact Page:** Functional UI design for the contact section.
 
 ## 📂 Technologies
 * **HTML5** (Semantic Structure)
