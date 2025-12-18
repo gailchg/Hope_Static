@@ -28,7 +28,6 @@ To view the **fully functional dynamic version** with a working database, please
 * **JavaScript** (DOM Manipulation for Tabs and Alerts)
 
 ## 👥 Authors
-## 👥 Authors
 * **Gladys Gail S. Coching**
 * **Whayen Ashley C. Saludo**
 * **Andrea Mikaela Algara**
