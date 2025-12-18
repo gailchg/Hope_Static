@@ -28,6 +28,11 @@ To view the **fully functional dynamic version** with a working database, please
 * **JavaScript** (DOM Manipulation for Tabs and Alerts)
 
 ## 👥 Authors
-* **Gladys Gail S. Coching**
-* **Whayen Ashley C. Saludo**
-* **Andrea Mikaela Algara**
+**1. Gladys Gail S. Coching – Project Lead & Backend Developer**
+* **Responsibilities:** Overseeing the entire development lifecycle, managing server deployment (InfinityFree & GitHub Pages), and handling core PHP backend logic to ensure seamless data processing.
+
+**2. Whayen Ashley C. Saludo – UI/UX Designer & Frontend Developer**
+* **Responsibilities:** Designing the user interface wireframes and translating them into responsive HTML/CSS code. Focused on typography, color theory, and ensuring the site is mobile-friendly.
+
+**3. Andrea Mikaela Algara – Database Administrator & QA Specialist**
+* **Responsibilities:** Designing the MySQL database schema (`web_project`), managing content population (events and programs), and performing quality assurance testing to identify bugs.
